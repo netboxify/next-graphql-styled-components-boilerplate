@@ -1,8 +1,8 @@
 import { StyledButton } from "@/components/button/style";
 
-const Button = ({ text, onClick, ...props }) => {
+const Button = ({ text, status, onClick, ...props }) => {
   return (
-    <StyledButton onClick={onClick} {...props}>
+    <StyledButton status={status} onClick={onClick} {...props}>
       {text}
     </StyledButton>
   );

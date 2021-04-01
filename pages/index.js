@@ -6,13 +6,29 @@ import { GET_POSTS } from "@/query/get-posts";
 
 const Home = ({ data }) => {
   return (
-    <div className="grid grid-pad">
-      <div className="col-1-1">
-        <div className="content">
-          <Button text="Button" background="tomato" />
+    <>
+      <div className="grid grid-pad">
+        <div className="col-1-1">
+          <div className="content">
+            <Button text="Button" background="tomato" status="pending" />
+          </div>
         </div>
       </div>
-    </div>
+      <div className="grid grid-pad">
+        <div className="col-1-1">
+          <div className="content">
+            <Button text="Button" background="tomato" status="approved" />
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-pad">
+        <div className="col-1-1">
+          <div className="content">
+            <Button text="Button" background="tomato" status="denied" />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
